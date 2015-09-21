@@ -11,11 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150921053145) do
+ActiveRecord::Schema.define(version: 20150921053921) do
 
   create_table "images", force: true do |t|
     t.string   "name"
     t.string   "path"
+    t.integer  "favorite"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "texts", force: true do |t|
+    t.string   "body"
     t.integer  "favorite"
     t.datetime "created_at"
     t.datetime "updated_at"

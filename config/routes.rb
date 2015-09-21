@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :texts
+
   resources :images
 
   resources :users
